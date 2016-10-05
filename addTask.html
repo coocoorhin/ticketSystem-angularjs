@@ -1,0 +1,46 @@
+<div ng-cloak>
+  <header>
+    <h3>Tasks</h3>
+  </header>
+
+<!--   <table>
+    <tr>
+      <th>Task</th><th>Description</th><th>Added</th><th>Remove</th>
+    </tr>
+    <tr ng-repeat="task in tasks">
+      <td>{{ task.title }}</td><td>{{ task.description }}</td><td>{{ task.added_date }}</td><td><button ng-click="removeData(task.id)">x</button></td>
+    </tr>
+  </table> -->
+
+
+  <div>
+      <form ng-submit="pushData(frm)" >
+        <div>
+          <label for="title">Task title</label>
+          <div>
+            <input type="text" ng-model="frm.title">
+          </div>
+        </div>
+        <div >
+          <label for="description">Description</label>
+          <div>
+            <textarea ng-model="frm.description"></textarea>
+          </div>
+        </div>
+        <div>
+          <div>
+            <button type="submit" value="submit">Insert Task</button>
+          </div>
+        </div>
+      </form>
+
+    <p ng-model="test1"></p>
+  </div>
+
+
+<br>
+<br>
+<br>
+
+
+</div>

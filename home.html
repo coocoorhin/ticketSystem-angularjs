@@ -1,0 +1,16 @@
+<div ng-cloak ng-controller="taskCtrl">
+  <header>
+    <h3>Tasks</h3>
+  </header>
+
+
+  <table class="table table-hover">
+    <tr>
+      <th>Task</th><th>Description</th><th>Added</th><th>Remove</th>
+    </tr>
+    <tr ng-repeat="task in tasks">
+      <td>{{ task.title }}</td><td>{{ task.description }}</td><td>{{ task.added_date }}</td><td><button class="btn-sm waves-effect waves-teal tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to Delete"
+	  ng-click="removeData(task.id)">x</button></td>
+    </tr>
+  </table>
+</div>
